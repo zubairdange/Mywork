@@ -1,11 +1,11 @@
 import React from "react";
-import { Carousel, Container } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import Img from "../MyHome/img1.jpg";
 import Img1 from "../MyHome/lake.jpg";
 import Img2 from "../MyHome/sunset.jpg";
 export const MyCarousel = () => {
   return (
-    <Container>
+    <React.Fragment>
       <div style={{ zoom: "60%" }}>
         <Carousel>
           <Carousel.Item>
@@ -33,6 +33,6 @@ export const MyCarousel = () => {
           </Carousel.Item>
         </Carousel>
       </div>
-    </Container>
+    </React.Fragment>
   );
 };

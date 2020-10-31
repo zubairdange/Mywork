@@ -1,8 +1,10 @@
 import React from "react";
+import { MyForm } from "../MyForm/MyForm";
 export const Tab4 = () => {
   return (
     <div>
-      <b>this is tab4</b>
+      <b>My Form</b>
+      <MyForm />
     </div>
   );
 };
