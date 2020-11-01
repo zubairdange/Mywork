@@ -11,6 +11,7 @@ export const MyNavBar = () => {
   return (
     <React.Fragment>
       <Navbar expand="lg" variant="dark" bg="dark">
+        <Navbar sticky="top" />
         <Navbar.Brand>
           <i> Mywork</i>
         </Navbar.Brand>
