@@ -3,7 +3,6 @@ import { Card, Button, Row, Col } from "react-bootstrap";
 import imgLogo from "../MyHome/amjad.png";
 import Tauseef from "../MyHome/tauseef.jpg";
 import tajjo from "../MyHome/tajjo.jpg";
-import { sendEmailNotification } from "../EmailUtil/EmailUtil";
 
 export const Tab2 = () => {
   return (
@@ -15,9 +14,7 @@ export const Tab2 = () => {
             <Card.Body>
               <Card.Title>Amjad Sir</Card.Title>
               <Card.Text>Founder PickUpBiz</Card.Text>
-              <Button variant="success" onClick={() => sendEmailNotification()}>
-                Send Email Notification
-              </Button>
+
               <Button
                 variant="primary "
                 href="https://www.youtube.com/results?search_query=react+js+by+mash+hamedani"

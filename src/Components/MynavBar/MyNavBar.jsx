@@ -1,5 +1,13 @@
 import React from "react";
-import { Button, Form, FormControl, Nav, Navbar } from "react-bootstrap";
+import {
+  Button,
+  Row,
+  Col,
+  Form,
+  FormControl,
+  Nav,
+  Navbar,
+} from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { MyContent } from "../MyContent/MyContent";
 import { MyHome } from "../MyHome/MyHome";
@@ -24,6 +32,11 @@ export const MyNavBar = () => {
             <Nav.Link href="about">About us</Nav.Link>
             <Nav.Link href="blogs">My Blogs</Nav.Link>
           </Nav>
+          <Row>
+            <Col>
+              <Nav.Link href="blogs">navlink1</Nav.Link>
+            </Col>
+          </Row>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
             <Button
