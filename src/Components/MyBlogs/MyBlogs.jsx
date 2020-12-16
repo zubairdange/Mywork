@@ -26,7 +26,12 @@ export const MyBlogs = () => {
   return (
     <div>
       <CountryDropdown value={country} onChange={(e) => setCountry(e)} />
-      <RegionDropdown value={region} onChange={(e) => setRegion(e)} />
+      <RegionDropdown
+        country={country}
+        value={region}
+        onChange={(e) => setRegion(e)}
+      />
+
       <h1>Select Fruits</h1>
       <pre>{selected.length > 0 && JSON.stringify(selected)}</pre>
       <MultiSelect
