@@ -1,30 +1,37 @@
 import React from "react";
-import { Card, Button, Row, Col } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import imgLogo from "../MyHome/amjad.png";
 import Tauseef from "../MyHome/tauseef.jpg";
 import tajjo from "../MyHome/tajjo.jpg";
 
-export const Tab2 = () => {
+export const Tab2 = ({ curentItem }) => {
   return (
     <div>
-      <Row>
-        <Col>
-          <Card style={{ width: "12rem" }}>
-            <Card.Img variant="top" src={imgLogo} />
-            <Card.Body>
-              <Card.Title>Amjad Sir</Card.Title>
-              <Card.Text>Founder PickUpBiz</Card.Text>
+      <Col>
+        <Card style={{ width: "18rem" }}>
+          <Col>
+            <Card.Img variant="top" src={curentItem.cardImg} />
+          </Col>
+          <Col>
+            <Card.Title>{curentItem.cardTitle}</Card.Title>
+          </Col>
 
-              <Button
+          <Card.Body>
+            <Card.Text>{curentItem.cardText}</Card.Text>
+            <Card.Link>{curentItem.cardLink}</Card.Link>
+
+            {/* <Button
                 variant="primary "
                 href="https://www.youtube.com/results?search_query=react+js+by+mash+hamedani"
               >
                 Learn React JS
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
+              </Button> */}
+          </Card.Body>
+        </Card>
+      </Col>
+
+      {/* <Col>
           <Card style={{ width: "12rem" }}>
             <Card.Img variant="top" src={tajjo} />
             <Card.Body>
@@ -51,8 +58,7 @@ export const Tab2 = () => {
               Profile
             </Button>
           </Card.Body>
-        </Card>
-      </Row>
+        </Card> */}
     </div>
   );
 };
