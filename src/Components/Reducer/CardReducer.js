@@ -1,5 +1,3 @@
-import { Button } from "bootstrap";
-
 export const CardReducer = {
   cardItems: [
     {
